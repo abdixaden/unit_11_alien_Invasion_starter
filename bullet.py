@@ -24,3 +24,5 @@ class Bullet(Sprite):
                  
     def draw_bullet(self):
         self.screen.blit(self.image, self.rect)
+        
+        
