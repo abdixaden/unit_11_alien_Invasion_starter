@@ -1,4 +1,4 @@
-# arsenal.py
+
 import pygame
 from pygame.sprite import Group
 from bullet import Bullet
@@ -29,3 +29,8 @@ class Arsenal:
             self.arsenal.add(new_bullet)
             return True
         return False
+    
+    def draw(self):
+        """Draw bullets to the screen."""
+        for bullet in self.arsenal:
+            bullet.draw_bullet()
